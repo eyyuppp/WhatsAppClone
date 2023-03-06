@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NumberActivty"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+
+        >
+
+
+    <ImageView
+
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/undraw_forgot_password_re_hxwm"
+        android:id="@+id/image"
+        android:layout_gravity="center"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="GİRİŞ YAPMAK İÇİN TELEFON NUMARANIZI DOĞRULAYIN"
+        android:textSize="20dp"
+        android:padding="5dp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="telefon numaranıza gelen smsi doğrulayın"
+        android:gravity="center"
+        android:padding="5dp"
+        >
+    </TextView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Telefona gelen şifreyi giriniz"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:ems="10"
+            android:id="@+id/TextSms"
+            />
+
+
+
+        <Button
+            android:id="@+id/buttonSignNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Giriş Yap"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    </LinearLayout>
+</LinearLayout>
